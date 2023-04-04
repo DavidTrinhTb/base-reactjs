@@ -1,0 +1,40 @@
+.empty-wrapper {
+  display: flex;
+
+  justify-content: center;
+  align-items: center;
+  padding: 10rem;
+
+  img {
+    width: 64px;
+    height: 48px;
+    opacity: 0.3;
+  }
+
+  .empty__text {
+    font-weight: 400;
+    font-style: normal;
+    font-size: 12px;
+    line-height: 16px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    color: #ffffff;
+  }
+}
+
+.flex-row {
+  flex-direction: row;
+
+  img {
+    margin-right: 1.6rem;
+  }
+}
+
+.flex-col {
+  flex-direction: column;
+
+  img {
+    margin-bottom: 1.6rem;
+  }
+}

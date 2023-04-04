@@ -1,0 +1,64 @@
+@import '../../assets/scss/variable.scss';
+
+.tabs-container {
+  border-radius: 8px;
+  padding: 24px 20px;
+
+  .view-all {
+    text-align: end;
+    margin-bottom: 6px;
+    padding-right: 11px;
+
+    img {
+      margin-right: 6px;
+      cursor: pointer;
+    }
+
+    span {
+      font-weight: 400;
+      font-style: normal;
+      font-size: 12px;
+      line-height: 16px;
+      color: $color-green-2;
+      cursor: pointer;
+    }
+  }
+
+  .ant-tabs-nav {
+    &::before {
+      border-color: transparent;
+    }
+  }
+
+  .ant-tabs-tab {
+    margin-left: 16px;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 20px;
+    color: $color-grey-4;
+
+    &:nth-child(1) {
+      margin-left: 0px;
+    }
+  }
+
+  .ant-tabs-tab-active {
+    .ant-tabs-tab-btn {
+      color: $color-green-2;
+      font-weight: 700;
+    }
+  }
+
+  .ant-tabs-ink-bar {
+    border: 1px solid $color-green-2;
+  }
+}
+
+.background-solid {
+  background: $color1;
+}
+
+.background-transparent {
+  background: transparent;
+}

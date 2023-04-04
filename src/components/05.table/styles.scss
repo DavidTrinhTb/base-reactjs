@@ -1,0 +1,213 @@
+@import 'src/assets/scss/variable.scss';
+
+.table-component {
+  .ant-table {
+    background: none;
+    overflow: hidden;
+    border-radius: 6px;
+  }
+
+  .editable-cell {
+    display: flex;
+    gap: 8px;
+    &__input {
+      flex: 1;
+      .ant-space-item {
+        width: 100%;
+      }
+    }
+  }
+
+  .cursor-pointer {
+    cursor: pointer;
+  }
+
+  .ant-table table {
+    background: $color1;
+    color: $color2;
+    font-weight: 600;
+    font-size: 12px;
+  }
+
+  .ant-table-placeholder .ant-table-cell {
+    border: none !important;
+  }
+  .ant-table-cell {
+    p {
+      margin-bottom: 0;
+    }
+  }
+
+  // heading table
+  .ant-table-thead > tr > th {
+    background: $color1;
+    border-color: $border-color-table;
+    font-weight: 700;
+    font-style: normal;
+    font-size: 14px;
+    color: $color-grey-6;
+
+    &::before {
+      display: none;
+    }
+
+    p,
+    .ant-typography {
+      margin-bottom: 0;
+    }
+  }
+
+  .ant-table-tbody > tr > td {
+    border-color: $border-color-table;
+    // fix ant-cell-hover
+    background: $color1 !important;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 16px;
+    color: $color2;
+  }
+
+  .ant-table-row:last-child {
+    td {
+      border-color: transparent;
+    }
+  }
+
+  .ant-table-row:hover {
+    background: $color1 !important;
+  }
+
+  .ant-table-tbody > tr.ant-table-row:hover > td,
+  .ant-table-tbody > tr > td.ant-table-cell-row:hover {
+    background: $color1 !important;
+    color: $color2;
+  }
+
+  // pagination
+  .ant-pagination-item {
+    background: $color1;
+    border: 1px solid $color3;
+    font-weight: 700;
+    border-radius: 8px;
+
+    &:hover {
+      border: 1px solid $color3;
+    }
+  }
+
+  .ant-pagination-item a {
+    font-weight: 700;
+    font-size: 14px;
+    color: $color-black-1;
+
+    &:hover {
+      color: $color-black-1;
+      opacity: 0.6;
+    }
+  }
+
+  .ant-pagination-item-active {
+    border: none;
+    border-radius: 8px;
+    background: $color-green-2 !important;
+
+    &:hover {
+      border: none;
+    }
+  }
+
+  .ant-pagination-item-active a {
+    color: $color1 !important;
+  }
+
+  // pagination button next and prev
+  .ant-pagination-prev {
+    border: 1px solid $color3;
+    border-radius: 8px;
+  }
+
+  .ant-pagination-prev .ant-pagination-item-link {
+    color: $color2;
+    font-size: 14px;
+    background-color: $color1;
+    border: none;
+    border-radius: 8px;
+  }
+
+  .ant-pagination-next {
+    border: 1px solid $color3;
+    border-radius: 8px;
+  }
+
+  .ant-pagination-next .ant-pagination-item-link {
+    color: $color2;
+    font-size: 14px;
+    background-color: $color1;
+    border: none;
+    border-radius: 8px;
+  }
+
+  // hover button next and prev
+  .ant-pagination-prev:hover .ant-pagination-item-link,
+  .ant-pagination-next:hover .ant-pagination-item-link {
+    color: $color2;
+    opacity: 0.6;
+  }
+
+  // empty
+  .ant-table-empty .ant-table-tbody > tr.ant-table-placeholder {
+    color: $color2;
+  }
+
+  .ant-table-empty .ant-table-tbody > tr.ant-table-placeholder:hover {
+    background: $color1;
+  }
+
+  .ant-table-placeholder:hover {
+    background: $color1;
+  }
+
+  .ant-table-tbody > tr.ant-table-placeholder:hover > td {
+    background: $color1;
+  }
+
+  .ant-pagination-jump-prev .ant-pagination-item-container .ant-pagination-item-ellipsis,
+  .ant-pagination-jump-next .ant-pagination-item-container .ant-pagination-item-ellipsis {
+    color: $color2;
+  }
+
+  .ant-table-thead th.ant-table-column-sort {
+    background: transparent;
+  }
+
+  .ant-table-column-sorters {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+
+    .ant-table-column-title {
+      width: auto;
+      flex: none;
+      margin-right: 5px;
+    }
+  }
+
+  .ant-pagination-options {
+    position: absolute;
+    left: 0;
+    .ant-select-selector {
+      border-radius: 8px;
+      padding: 0px 10px;
+      display: flex;
+      align-items: center;
+      height: auto;
+      .ant-select-selection-item {
+        color: $color12;
+      }
+    }
+    .ant-select-arrow {
+      color: $color12;
+    }
+  }
+}

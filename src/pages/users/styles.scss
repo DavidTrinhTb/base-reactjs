@@ -1,0 +1,9 @@
+@import 'src/assets/scss/variable.scss';
+
+.user-page {
+  min-height: calc(100vh - 108px);
+  background: $color-pure-white;
+  margin: 20px;
+  padding: 20px;
+  border-radius: 8px;
+}

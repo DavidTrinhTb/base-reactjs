@@ -1,0 +1,110 @@
+@import '../../assets/scss/variable.scss';
+
+.frac-pagination {
+  display: block;
+  width: 100%;
+  .ant-pagination-item {
+    background: $color1;
+    border: 1px solid $color3;
+    font-weight: 700;
+    border-radius: 8px;
+
+    &:hover {
+      border: 1px solid $color3;
+    }
+  }
+
+  .ant-pagination-item a {
+    font-weight: 700;
+    font-size: 14px;
+    color: $color-black-1;
+
+    &:hover {
+      color: $color-black-1;
+      opacity: 0.6;
+    }
+  }
+
+  .ant-pagination-item-active {
+    border: none;
+    border-radius: 8px;
+    background: $color-green-2 !important;
+
+    &:hover {
+      border: none;
+    }
+  }
+
+  .ant-pagination-item-active a {
+    color: $color1 !important;
+  }
+
+  // pagination button next and prev
+  .ant-pagination-prev {
+    border: 1px solid $color3;
+    border-radius: 8px;
+  }
+
+  .ant-pagination-prev .ant-pagination-item-link {
+    color: $color2;
+    font-size: 14px;
+    background-color: $color1;
+    border: none;
+    border-radius: 8px;
+  }
+
+  .ant-pagination-next {
+    border: 1px solid $color3;
+    border-radius: 8px;
+  }
+
+  .ant-pagination-next .ant-pagination-item-link {
+    color: $color2;
+    font-size: 14px;
+    background-color: $color1;
+    border: none;
+    border-radius: 8px;
+  }
+
+  // hover button next and prev
+  .ant-pagination-prev:hover .ant-pagination-item-link,
+  .ant-pagination-next:hover .ant-pagination-item-link {
+    color: $color2;
+    opacity: 0.6;
+  }
+
+  // empty
+  .ant-table-empty .ant-table-tbody > tr.ant-table-placeholder {
+    color: $color2;
+  }
+
+  .ant-table-empty .ant-table-tbody > tr.ant-table-placeholder:hover {
+    background: $color1;
+  }
+
+  .ant-table-placeholder:hover {
+    background: $color1;
+  }
+
+  .ant-table-tbody > tr.ant-table-placeholder:hover > td {
+    background: $color1;
+  }
+
+  .ant-pagination-jump-prev .ant-pagination-item-container .ant-pagination-item-ellipsis,
+  .ant-pagination-jump-next .ant-pagination-item-container .ant-pagination-item-ellipsis {
+    color: $color2;
+  }
+
+  .ant-pagination {
+    display: flex;
+    .ant-pagination-options {
+      width: 120px;
+      order: -1;
+      margin-right: auto;
+      .ant-select-selector {
+        height: 36px;
+        border-radius: 8px !important;
+      }
+    }
+  }
+}

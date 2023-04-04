@@ -1,0 +1,9 @@
+@import 'src/assets/scss/variable.scss';
+
+.page-size-wrapper {
+  width: 120px;
+  .ant-select-selector {
+    min-height: 44px;
+    border-radius: 8px !important;
+  }
+}

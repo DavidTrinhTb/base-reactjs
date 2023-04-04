@@ -1,0 +1,37 @@
+@import 'src/assets/scss/variable.scss';
+
+.frac-input {
+  font-weight: 400;
+  font-style: normal;
+  font-size: 14px;
+  line-height: 16px;
+  border-radius: 8px;
+  height: 44px;
+
+  &--default {
+    border: 1px solid $color3 !important;
+  }
+
+  &--focused {
+    border: 1px solid $color8 !important;
+  }
+
+  &--success {
+    border: 1px solid $color9 !important;
+  }
+
+  &--warning {
+    border: 1px solid $color10 !important;
+  }
+
+  &--error {
+    border: 1px solid $color11 !important;
+  }
+
+  .ant-input {
+    margin-left: 5px;
+    color: $color12;
+    font-style: normal;
+    font-weight: 400;
+  }
+}

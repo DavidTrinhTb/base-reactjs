@@ -1,0 +1,32 @@
+.modal-processing {
+  .title {
+    font-weight: 700;
+    font-size: 20px;
+    text-align: center;
+    color: black;
+    margin-bottom: 25px;
+  }
+  .process-waiting {
+    text-align: center;
+    .loading {
+      margin: 0 auto;
+      margin-bottom: 20px;
+    }
+    .img-loading {
+      margin-bottom: 30px;
+      animation-name: spin;
+      animation-duration: 2000ms;
+      animation-iteration-count: infinite;
+      animation-timing-function: linear; 
+    }
+  }
+}
+
+@keyframes spin {
+  from {
+      transform:rotate(0deg);
+  }
+  to {
+      transform:rotate(360deg);
+  }
+}

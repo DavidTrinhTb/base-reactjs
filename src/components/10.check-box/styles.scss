@@ -1,0 +1,11 @@
+@import '../../assets/scss/variable.scss';
+
+.check-box-frac > .ant-checkbox-checked .ant-checkbox-inner::after {
+  border-color: $check-box-color;
+}
+
+.check-box-frac > .ant-checkbox .ant-checkbox-inner {
+  background-color: transparent;
+  border-color: $check-box-color;
+  color: $check-box-color;
+}

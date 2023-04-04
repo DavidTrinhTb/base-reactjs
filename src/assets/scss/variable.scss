@@ -1,0 +1,174 @@
+// common color of app
+$color-primary-light: #71cff5;
+$color-5th-blue: #71cef3;
+
+$color-pure-white: #ffffff;
+$color-pure-black: #000000;
+$color_primary: #00948b;
+
+// black
+$color-soft-blue: #1b1936;
+$color-second-soft-blue: #15142c;
+$color-third-soft-blue: #1c233d;
+$color-fourth-soft-blue: #13112b;
+$background-block: #121128;
+$main-background-color: #100f23;
+$address-group-background-color: #0e0c2c;
+$color-black-1: #242424;
+$color-black-2: #0000004d;
+
+// common blue
+$color-fifth-soft-blue: #2e2b4d;
+$color-second-blue: #6071c3;
+$color-3rd-blue: #293b7b;
+$color-4th-blue: #1e2f51;
+$color-5th-blue: #4d8aff;
+$text-box-background: #28385b;
+$background-float-message: #222054;
+$color-6th-blue: #1890ff;
+$color-7th-blue: #4e8fcc;
+$color-8th-blue: #6a9dff;
+$border-color-blue: #516bae;
+$color_malibu: #78d3f8;
+
+// common green
+$color-price-green: #6bd481;
+$text-color-green: #399e72;
+$color-green: #39a459;
+$color-green-2: #00948b;
+$color-green-3: rgba(0, 148, 139, 0.5);
+$color-green-4: #4ecc79;
+$color-second-green: #50af95;
+$color-price-green-2: $text-color-green;
+$color-green-3: #00948b;
+$color-green-4: #7ecc4e;
+$color-green-5: #00b2b2;
+$color-green-6: #00c7c7;
+$color-green-7: #e5f4f3;
+$color-green-8: #269a99;
+$color-white: #fff;
+
+// red
+$color-price-red: #ec5f59;
+$text-color-red: #ff4848;
+$text-color-red-2: #f35b37;
+$text-color-red-3: #e94e4e;
+$color_flamingo: #f35b37;
+$color-price-red-2: $text-color-red;
+
+// gray
+$disable-color: #595869;
+$color-second-grey: #666666;
+$color-third-grey: #c5c5cb;
+$color-grey: gray;
+$color-grey-2: #878787;
+$color-grey-3: #f7f7f7;
+$color-grey-4: #787878;
+$color-grey-5: #d1d1d1;
+$color-grey-6: #303030;
+$color-grey-7: #f6f6f6;
+$color-grey-7: #7e7676;
+$color-grey-8: #65789b;
+$color-1th-gray: #c4c4c4;
+$color-gray-2: #787878;
+$color-gray-3: #d9d9d9;
+$color-gray-4: #f4f4f4;
+$color_neutral: #454545;
+$color_persian_green: #00948b;
+$color-token: #808080;
+
+// purple
+$color-purple: #b74ee9;
+$color-purple-1: #9270ca;
+$color-purple-2: #7262fd;
+// orange
+$color-orange: #f6903d;
+
+//green
+$color-green: #7ecc4e;
+
+// pink
+$color-pink-1: #ff98ef;
+$color-pink-2: #f08bb4;
+
+// variable button area
+$color13: #00948b;
+
+// border color
+$border-input-color: $color-primary-light;
+
+// header color
+$bg-header: $color-primary-light;
+$bg-header-dark: $color-soft-blue;
+
+// text color
+$text-color-white: #fff;
+$text-color-white-opacity-60: rgba(255, 255, 255, 0.6);
+$text-color-white-opacity-70: rgba(255, 255, 255, 0.7);
+$text-color-black-opacity-50: rgba(0, 0, 0, 0.5);
+
+// navbar bg color
+$bg-navbar: #312f60;
+
+// z-index
+$navbar-index: 10;
+$nav-menu-index: 100;
+
+// responsive
+$tablet-width: 768px;
+$desktop-width: 1024px;
+
+// check box color
+$check-box-color: #559ff7;
+$nft-name-color: #29abe3;
+$nft-score-color: #a6e4ff;
+$bg-social-network: #31304a;
+$bg-date-select-value: $color-4th-blue;
+$thead-date-color: #f8f7fa;
+
+$text-option-color: $text-color-white-opacity-60;
+// table color
+
+$color-table-text: rgba(239, 239, 240, 1);
+$border-color-table: #d1d1d1;
+$background-pagination-direction: #1b1938;
+
+$color_error: #ff4d4f;
+$color_disable: #f5f5f5;
+
+// modal
+$color1: #ffffff;
+$color2: #000000;
+$color3: #d1d1d1;
+$color4: #ebf9f8;
+
+// inputs
+$color5: #878787;
+$color8: #6197ff;
+$color9: #4ecc79;
+$color10: #fdc932;
+$color11: #f35b37;
+$color12: #242424;
+
+// pair item
+$color6: #f7f7f7;
+$color7: #303030;
+$color14: #dcf5e4;
+$color15: #fbdcdc;
+$color16: #dbe8ff;
+$color17: #fff0d9;
+$color18: #1c823c;
+$color19: #a50000;
+$color20: #2152a9;
+$color21: #8f5a09;
+$color22: #454545;
+
+// message
+$color_bg_info: #eef4ff;
+$color_bg_success: #eefaf2;
+$color_bg_warning: #fffaeb;
+$color_bg_error: #feefeb;
+$color_head_info: #4d8aff;
+$color_head_success: #4ecc79;
+$color_head_warning: #fdc932;
+$color_head_error: #f35b37;

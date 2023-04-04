@@ -1,0 +1,18 @@
+@import '../../../assets/scss/variable.scss';
+
+.loading-page {
+  position: absolute;
+  width: 100vw;
+  height: 100vh;
+  top: -52px;
+  left: 0;
+  right: 0;
+  z-index: 10;
+  display: flex;
+  background: rgba(255, 255, 255, 0.3);
+  img {
+    width: 105px;
+    height: 105px;
+    margin: auto;
+  }
+}
