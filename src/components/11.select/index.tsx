@@ -7,7 +7,7 @@ interface ISelect extends SelectProps {}
 
 const { Option } = Select;
 
-const FracSelect: React.FC<ISelect> = (props: ISelect) => {
+const SelectComponent: React.FC<ISelect> = (props: ISelect) => {
   const { options = [], className } = props;
   return (
     <Select {...props} className={`${className ? className : 'frac-select'}`}>
@@ -20,4 +20,4 @@ const FracSelect: React.FC<ISelect> = (props: ISelect) => {
   );
 };
 
-export default FracSelect;
+export default SelectComponent;

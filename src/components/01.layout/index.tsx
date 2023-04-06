@@ -1,15 +1,15 @@
+import _isEmpty from 'lodash/isEmpty';
 import { Suspense } from 'react';
-import { useSelector } from 'react-redux';
+import ReactLoading from 'react-loading';
 import { BrowserRouter, Route, Switch } from 'react-router-dom';
+import { useAuth } from 'src/contexts/auth';
 import PrivateRouter from 'src/routes/Routes';
 import PrivateLayout from './PrivateLayout';
 import PublicLayout from './PublicLayout';
 import { PublicRouter } from './sidebar/constants/SidebarList';
-import ReactLoading from 'react-loading';
 
 const LayoutComponent = () => {
-  const token = 'token';
-
+  const { token } = useAuth();
   return (
     <BrowserRouter>
       <Suspense
@@ -19,11 +19,7 @@ const LayoutComponent = () => {
           </div>
         }
       >
-        {token ? (
-          <PrivateLayout>
-            <PrivateRouter />
-          </PrivateLayout>
-        ) : (
+        {_isEmpty(token) ? (
           <PublicLayout>
             <Switch>
               {PublicRouter.map((route: any, index: number) => (
@@ -31,6 +27,10 @@ const LayoutComponent = () => {
               ))}
             </Switch>
           </PublicLayout>
+        ) : (
+          <PrivateLayout>
+            <PrivateRouter />
+          </PrivateLayout>
         )}
       </Suspense>
     </BrowserRouter>

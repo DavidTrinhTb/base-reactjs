@@ -51,7 +51,7 @@ export const SidebarList = [
 
 export const PublicRouter = [
   {
-    label: 'Connect Wallet',
+    label: 'Login',
     subLink: PATHS.LOGIN,
     component: Login,
     exact: true,

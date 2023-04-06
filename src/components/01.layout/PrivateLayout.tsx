@@ -22,7 +22,7 @@ const PrivateLayout: React.FC<ILayoutProps> = ({ children }) => {
 
   return (
     <div id='layout' className={theme}>
-      <Layout className='container'>
+      <Layout>
         <Sidebar collapsed={collapsed} />
         <Layout className='site-layout'>
           <Header collapsed={collapsed} setCollapsed={setCollapsed} theme={theme} setTheme={setTheme} />

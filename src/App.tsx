@@ -1,4 +1,3 @@
-import '@ant-design/flowchart/dist/index.css';
 import 'antd/dist/antd.css';
 import BigNumber from 'bignumber.js';
 import React from 'react';
@@ -10,8 +9,9 @@ import 'src/assets/scss/variable.scss';
 import 'src/assets/scss/_themes.scss';
 import './App.scss';
 import LayoutComponent from './components/01.layout';
-import './index.scss';
+import { AuthProvider } from './contexts/auth';
 import initStore from './store';
+import './index.scss';
 
 BigNumber.config({
   ROUNDING_MODE: BigNumber.ROUND_DOWN,
@@ -23,10 +23,12 @@ const App: React.FC = () => {
 
   return (
     <PersistGate persistor={persistor} loading={null}>
-      <Provider store={store}>
-        <ToastContainer />
-        <LayoutComponent />
-      </Provider>
+      <AuthProvider>
+        <Provider store={store}>
+          <ToastContainer />
+          <LayoutComponent />
+        </Provider>
+      </AuthProvider>
     </PersistGate>
   );
 };

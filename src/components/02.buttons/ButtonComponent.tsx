@@ -3,7 +3,7 @@ import { Button } from 'antd';
 import './styles/button-component.scss';
 import cx from 'classnames';
 
-declare const ButtonVarients: ['default', 'primary', 'light', 'secondary', 'border-secondary', 'active', 'approve'];
+declare const ButtonVarients: ['default', 'primary', 'secondary', 'light', 'confirm'];
 declare type ButtonVarient = typeof ButtonVarients[number];
 
 type ButtonComponentProps = {

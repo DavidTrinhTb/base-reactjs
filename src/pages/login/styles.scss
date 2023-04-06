@@ -1,5 +1,17 @@
 @import '../../assets/scss/variable.scss';
 
 .login-page {
-  display: block;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  .login-wrapper {
+    width: 500px;
+    .title {
+      font-size: 35px;
+    }
+    .label {
+      font-size: 14px;
+    }
+  }
 }

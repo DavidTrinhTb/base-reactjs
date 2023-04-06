@@ -1,3 +1,7 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
 @import '/src/assets/scss/variable.scss';
 
 html {
@@ -148,7 +152,9 @@ textarea {
   -moz-osx-font-smoothing: grayscale;
 }
 
-.icon-icomoon-filter-circle:before {
-  content: '\e900';
-  // color: #00948b;
+input:-webkit-autofill,
+input:-webkit-autofill:hover,
+input:-webkit-autofill:focus,
+input:-webkit-autofill:active {
+  -webkit-box-shadow: 0 0 0 30px white inset !important;
 }

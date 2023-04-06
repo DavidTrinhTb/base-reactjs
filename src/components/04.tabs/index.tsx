@@ -8,7 +8,7 @@ export interface IFracTabPaneProps extends TabPaneProps {
   title: any;
 }
 
-interface IFracTabsProps extends TabsProps {
+interface typeProps extends TabsProps {
   tabs: IFracTabPaneProps[];
   operations?: React.ReactNode;
   transparent?: boolean;
@@ -18,7 +18,7 @@ interface IFracTabsProps extends TabsProps {
 
 const { TabPane } = Tabs;
 
-const FracTabs: React.FC<IFracTabsProps> = (props: IFracTabsProps) => {
+const TabsComponent: React.FC<typeProps> = (props: typeProps) => {
   const { tabs, operations = <></>, transparent = false, viewAll = false, path = '' } = props;
 
   const history = useHistory();
@@ -49,4 +49,4 @@ const FracTabs: React.FC<IFracTabsProps> = (props: IFracTabsProps) => {
   );
 };
 
-export default FracTabs;
+export default TabsComponent;

@@ -2,7 +2,7 @@ import { Checkbox } from 'antd';
 import React from 'react';
 import './styles.scss';
 
-interface ICheckBoxFrac {
+interface typeProps {
   checked?: boolean;
   disabled?: boolean;
   onChange?: (e: any) => void;
@@ -11,12 +11,12 @@ interface ICheckBoxFrac {
   className?: string;
 }
 
-const CheckBoxFrac = (props: ICheckBoxFrac) => {
+const CheckBox = (props: typeProps) => {
   return (
-    <Checkbox className='check-box-frac' {...props}>
+    <Checkbox className='check-box' {...props}>
       {props.children}
     </Checkbox>
   );
 };
 
-export default CheckBoxFrac;
+export default CheckBox;

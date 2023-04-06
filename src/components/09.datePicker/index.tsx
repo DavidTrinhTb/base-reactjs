@@ -13,7 +13,7 @@ interface typeProps {
   inputReadOnly?: boolean;
 }
 
-const FracDatePicker: React.FC<typeProps> = ({
+const DatePickerComponent: React.FC<typeProps> = ({
   onChange,
   clearIcon = true,
   showToday = false,
@@ -38,4 +38,4 @@ const FracDatePicker: React.FC<typeProps> = ({
   );
 };
 
-export default FracDatePicker;
+export default DatePickerComponent;

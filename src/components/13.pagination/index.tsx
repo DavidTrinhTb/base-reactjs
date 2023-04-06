@@ -12,7 +12,7 @@ interface IPagination extends PaginationProps {
 
 const PAGE_SIZE_OPTIONS = [10, 20, 50];
 
-const FracPagination: React.FC<IPagination> = (props: IPagination) => {
+const PaginationComponent: React.FC<IPagination> = (props: IPagination) => {
   const { pageSize, current = 1, showSizeChanger = false, ...restProps } = props;
   return (
     <div className='frac-pagination'>
@@ -27,4 +27,4 @@ const FracPagination: React.FC<IPagination> = (props: IPagination) => {
   );
 };
 
-export default FracPagination;
+export default PaginationComponent;
