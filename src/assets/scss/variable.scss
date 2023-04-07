@@ -1,35 +1,20 @@
 // common color of app
-$color-primary-light: #71cff5;
-$color-5th-blue: #71cef3;
-
-$color-pure-white: #ffffff;
-$color-pure-black: #000000;
 $color_primary: #00948b;
+$color_primary-hover: #00b2b2;
+$color-primary-light: #71cff5;
+$color-pure-black: #000000;
+$color-white: #fff;
 
 // black
 $color-soft-blue: #1b1936;
-$color-second-soft-blue: #15142c;
-$color-third-soft-blue: #1c233d;
-$color-fourth-soft-blue: #13112b;
-$background-block: #121128;
-$main-background-color: #100f23;
-$address-group-background-color: #0e0c2c;
 $color-black-1: #242424;
-$color-black-2: #0000004d;
 
 // common blue
-$color-fifth-soft-blue: #2e2b4d;
-$color-second-blue: #6071c3;
-$color-3rd-blue: #293b7b;
 $color-4th-blue: #1e2f51;
-$color-5th-blue: #4d8aff;
 $text-box-background: #28385b;
-$background-float-message: #222054;
 $color-6th-blue: #1890ff;
 $color-7th-blue: #4e8fcc;
 $color-8th-blue: #6a9dff;
-$border-color-blue: #516bae;
-$color_malibu: #78d3f8;
 
 // common green
 $color-price-green: #6bd481;
@@ -46,7 +31,6 @@ $color-green-5: #00b2b2;
 $color-green-6: #00c7c7;
 $color-green-7: #e5f4f3;
 $color-green-8: #269a99;
-$color-white: #fff;
 
 // red
 $color-price-red: #ec5f59;
@@ -106,35 +90,10 @@ $text-color-white: #fff;
 $text-color-white-opacity-60: rgba(255, 255, 255, 0.6);
 $text-color-white-opacity-70: rgba(255, 255, 255, 0.7);
 $text-color-black-opacity-50: rgba(0, 0, 0, 0.5);
-
-// navbar bg color
-$bg-navbar: #312f60;
-
-// z-index
-$navbar-index: 10;
-$nav-menu-index: 100;
-
-// responsive
-$tablet-width: 768px;
-$desktop-width: 1024px;
-
-// check box color
-$check-box-color: #559ff7;
-$nft-name-color: #29abe3;
-$nft-score-color: #a6e4ff;
-$bg-social-network: #31304a;
-$bg-date-select-value: $color-4th-blue;
-$thead-date-color: #f8f7fa;
-
 $text-option-color: $text-color-white-opacity-60;
+
 // table color
-
-$color-table-text: rgba(239, 239, 240, 1);
 $border-color-table: #d1d1d1;
-$background-pagination-direction: #1b1938;
-
-$color_error: #ff4d4f;
-$color_disable: #f5f5f5;
 
 // modal
 $color1: #ffffff;
@@ -144,33 +103,9 @@ $color4: #ebf9f8;
 
 // inputs
 $color5: #878787;
+$color6: #f7f7f7;
 $color8: #6197ff;
 $color9: #4ecc79;
 $color10: #fdc932;
 $color11: #f35b37;
 $color12: #242424;
-
-// pair item
-$color6: #f7f7f7;
-$color7: #303030;
-$color14: #dcf5e4;
-$color15: #fbdcdc;
-$color16: #dbe8ff;
-$color17: #fff0d9;
-$color18: #1c823c;
-$color19: #a50000;
-$color20: #2152a9;
-$color21: #8f5a09;
-$color22: #454545;
-
-// message
-$color_bg_info: #eef4ff;
-$color_bg_success: #eefaf2;
-$color_bg_warning: #fffaeb;
-$color_bg_error: #feefeb;
-$color_head_info: #4d8aff;
-$color_head_success: #4ecc79;
-$color_head_warning: #fdc932;
-$color_head_error: #f35b37;
-
-//

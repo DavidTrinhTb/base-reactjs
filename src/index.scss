@@ -4,10 +4,6 @@
 
 @import '/src/assets/scss/variable.scss';
 
-html {
-  // font-size: 10px;
-}
-
 body,
 html {
   margin: 0;
@@ -15,10 +11,6 @@ html {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
-
-// code {
-//   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New', monospace;
-// }
 
 //Poppins
 @font-face {
@@ -140,7 +132,6 @@ textarea {
 [class*=' icon-icomoon'] {
   /* use !important to prevent issues with browser extensions that change fonts */
   font-family: 'icomoon' !important;
-  speak: never;
   font-style: normal;
   font-weight: normal;
   font-variant: normal;
@@ -156,5 +147,5 @@ input:-webkit-autofill,
 input:-webkit-autofill:hover,
 input:-webkit-autofill:focus,
 input:-webkit-autofill:active {
-  -webkit-box-shadow: 0 0 0 30px white inset !important;
+  -webkit-box-shadow: 0 0 0 30px $color-white inset !important;
 }

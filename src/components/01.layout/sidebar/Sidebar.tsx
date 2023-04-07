@@ -19,8 +19,8 @@ const Sidebar: React.FC<ISidebar> = ({ collapsed }) => {
 
   return (
     <Sider collapsed={collapsed} theme={'light'} className='sider' width={256}>
-      <div className='logo-section' onClick={() => history.push(PATHS.HOME)}>
-        Logo
+      <div className='logo-section text-center font-bold text-xl mb-4' onClick={() => history.push(PATHS.HOME)}>
+        David Trinh
       </div>
       <Menu theme='light' selectedKeys={[selectedKey]} mode='inline' className='main-menu'>
         {SidebarList.map((item: any, index: number) => {
@@ -31,7 +31,7 @@ const Sidebar: React.FC<ISidebar> = ({ collapsed }) => {
                 <Item
                   key={item.subLink}
                   onClick={() => history.push(item.subLink)}
-                  icon={<img src={item.icon} style={{ marginRight: '20px' }} alt='' />}
+                  icon={<img src={item.icon} className='mr-1' alt='' />}
                 >
                   {!collapsed && item.label}
                 </Item>
@@ -39,7 +39,7 @@ const Sidebar: React.FC<ISidebar> = ({ collapsed }) => {
               {item?.children && (
                 <SubMenu
                   key={`${item.subLink}_${index}`}
-                  icon={<img src={item.icon} style={{ marginRight: '30px' }} alt='' />}
+                  icon={<img src={item.icon} className='mr-1.5' alt='' />}
                   title={item.label}
                   className='sub-menu-container'
                 >

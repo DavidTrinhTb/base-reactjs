@@ -50,13 +50,13 @@ const Login: React.FC<typeProps> = () => {
   };
 
   return (
-    <div className='login-page'>
+    <div className='login-page max-sm:p-4'>
       <div className='login-wrapper'>
-        <h1 className='title text-center font-bold mb-12'>Welcome to Beesi</h1>
+        <h1 className='title text-center font-bold mb-12 text-white'>Welcome to Beesi</h1>
         <FormProvider {...methods}>
           <form onSubmit={handleSubmit(onSubmit)}>
             <div className='mb-4'>
-              <label className='mb-2 block font-bold'>Email</label>
+              <label className='mb-2 block font-bold text-white'>Email</label>
               <Controller
                 name='email'
                 control={control}
@@ -65,8 +65,8 @@ const Login: React.FC<typeProps> = () => {
               />
               {errors.email && <span className='text-error'>This field is required</span>}
             </div>
-            <div className='mb-4'>
-              <label className='mb-2 block font-bold'>Password</label>
+            <div className='mb-8'>
+              <label className='mb-2 block font-bold text-white'>Password</label>
               <Controller
                 name='password'
                 control={control}
@@ -78,7 +78,6 @@ const Login: React.FC<typeProps> = () => {
               {errors.password && <span className='text-error'>This field is required</span>}
             </div>
             <ButtonComponent customClassName='w-full mb-6' type='submit' text='Submit' variant='primary' />
-            <ButtonComponent customClassName='w-full' text='Clear' variant='primary' onClick={reset} />
           </form>
         </FormProvider>
       </div>

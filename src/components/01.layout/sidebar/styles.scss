@@ -4,7 +4,7 @@
 $background-color: #1b1936;
 $background-color-sider: #293b7b;
 
-#layout .container {
+#layout {
   height: auto;
   // background: $background-color;
   #slider {
@@ -12,7 +12,6 @@ $background-color-sider: #293b7b;
       display: none;
     }
   }
-
   .sider {
     // background: $background-color-sider;
     position: sticky;
@@ -20,14 +19,12 @@ $background-color-sider: #293b7b;
     height: 100vh;
     top: 0;
     .logo-section {
-      height: 104px;
       padding: 34px 32px;
       border-bottom: 1px solid $color-gray-4;
       border-right: 1px solid $color-gray-4;
-      text-align: center;
-      img {
-        height: 36px;
-      }
+      background: -webkit-linear-gradient(45deg, #09009f, #00ff95 80%);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
     }
 
     .main-menu {

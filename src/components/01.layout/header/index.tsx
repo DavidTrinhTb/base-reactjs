@@ -2,9 +2,10 @@ import { Layout } from 'antd';
 import React, { Dispatch, SetStateAction } from 'react';
 import { ThemesMode } from '../PrivateLayout';
 import { storage } from 'src/utils/storage';
-import './styles.scss';
 import { STORAGE_KEY } from 'src/constants/storage';
 import { useAuth } from 'src/contexts/auth';
+import IconToogle from 'src/assets/icons/svg/toogle.svg';
+import './styles.scss';
 
 const { Header } = Layout;
 
@@ -21,10 +22,13 @@ const AppHeader: React.FC<Props> = ({ collapsed, setCollapsed, theme, setTheme }
     setToken('');
     storage.remove(STORAGE_KEY.ACCESS_TOKEN);
   };
+
   return (
-    <Header className='flex items-center justify-between'>
-      <span>Header</span>
-      <span className='cursor-pointer' onClick={handleLogout}>
+    <Header className='flex items-center justify-between bg-white px-8'>
+      <span className='text-white cursor-pointer' onClick={() => setCollapsed(!collapsed)}>
+        <img width={18} className='text-white' src={IconToogle} alt='' />
+      </span>
+      <span className='cursor-pointer font-bold' onClick={handleLogout}>
         Log out
       </span>
     </Header>

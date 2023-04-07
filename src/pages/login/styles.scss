@@ -5,13 +5,35 @@
   display: flex;
   align-items: center;
   justify-content: center;
+  background-image: url('../../assets/images/login-bg.jpg');
+  background-position: center;
+  background-size: cover;
   .login-wrapper {
     width: 500px;
+    margin-top: -50px;
     .title {
       font-size: 35px;
     }
     .label {
       font-size: 14px;
     }
+    .input-component {
+      height: 44px;
+      background: transparent;
+    }
+    input {
+      background: transparent;
+      color: $color-white;
+    }
+    svg {
+      color: $color-white;
+    }
+  }
+  input:-webkit-autofill,
+  input:-webkit-autofill:hover,
+  input:-webkit-autofill:focus,
+  input:-webkit-autofill:active {
+    -webkit-transition: 'color 9999s ease-out, background-color 9999s ease-out';
+    -webkit-transition-delay: 9999s;
   }
 }
