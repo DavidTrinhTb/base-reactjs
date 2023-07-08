@@ -1,0 +1,40 @@
+.ant-btn {
+  cursor: pointer;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 16px;
+  text-align: center;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  height: 32px;
+  border-radius: $form_border_radius;
+
+  .prefix {
+    margin-right: 8px;
+  }
+
+  &:focus,
+  &:active,
+  &:hover {
+    outline: none;
+    box-shadow: none;
+  }
+
+  &:hover {
+    opacity: 0.8;
+  }
+
+  &:disabled {
+    opacity: 0.5;
+  }
+
+  &.form-button {
+    width: 32px;
+    padding: 4px;
+    border: none;
+    color: $color_primary;
+    box-shadow: none;
+    position: relative;
+  }
+}

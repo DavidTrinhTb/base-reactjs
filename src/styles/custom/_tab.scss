@@ -1,0 +1,79 @@
+.ant-tabs-nav {
+  width: fit-content;
+
+  &:before {
+    display: none;
+  }
+}
+
+.ant-tabs > .ant-tabs-nav .ant-tabs-nav-list,
+.ant-tabs > div > .ant-tabs-nav .ant-tabs-nav-list {
+  border-radius: $form_border_radius;
+  overflow: hidden;
+
+  &::after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border: 1px solid $color_gray_2;
+    z-index: -1;
+    border-radius: $form_border_radius;
+  }
+}
+
+.ant-tabs-tab + .ant-tabs-tab {
+  margin: 0;
+}
+
+.ant-tabs-ink-bar {
+  display: none;
+}
+
+.ant-tabs-tab {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 12px 24px;
+  gap: 10px;
+  height: 48px;
+  color: $color_gray_8;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 150%;
+
+  &:hover {
+    color: $color_gray_8;
+  }
+}
+
+.ant-tabs-tab-active {
+  background: $color_primary;
+  position: relative;
+
+  &::after {
+    content: '';
+    position: absolute;
+    width: calc(100% + 2px);
+    height: calc(100% + 2px);
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: $color_primary;
+    z-index: -1;
+  }
+}
+
+.ant-tabs-tab.ant-tabs-tab-active .ant-tabs-tab-btn {
+  color: $color_white;
+}
+
+.ant-tabs > .ant-tabs-nav .ant-tabs-nav-operations-hidden,
+.ant-tabs > div > .ant-tabs-nav .ant-tabs-nav-operations-hidden,
+.ant-tabs > .ant-tabs-nav .ant-tabs-nav-operations,
+.ant-tabs > div > .ant-tabs-nav .ant-tabs-nav-operations {
+  display: none !important;
+}

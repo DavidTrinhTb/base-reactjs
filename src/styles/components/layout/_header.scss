@@ -1,0 +1,115 @@
+.header-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: $color_white;
+  color: $color_gray;
+
+  .notification-icon {
+    margin-right: 30px;
+
+    &:hover {
+      cursor: pointer;
+    }
+
+    .ant-badge-count {
+      box-shadow: unset;
+    }
+  }
+
+  .app-header {
+    background-color: $color_black;
+    padding: 0 45px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    line-height: unset;
+    height: 96px;
+
+    &__dropdown {
+      display: flex;
+      align-items: center;
+
+      .ant-select-single .ant-select-selector .ant-select-selection-item,
+      .ant-select-item-option,
+      .ant-select-dropdown .ant-checkbox-wrapper,
+      .ant-select-selection-overflow {
+        color: $color_primary;
+        font-weight: 600;
+      }
+
+      .ant-select:not(.ant-select-customize-input) .ant-select-selector {
+        padding: 0;
+        margin-right: 16px;
+      }
+
+      .ant-select-arrow svg path {
+        fill: $color_primary;
+      }
+      .user {
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 150%;
+        color: $color_black;
+        margin-left: 12px;
+      }
+
+      .avatar-icon {
+        width: 40px;
+        height: 40px;
+        border-radius: 50%;
+        cursor: pointer;
+      }
+
+      &__text {
+        margin-right: 12px;
+        margin-left: 20px;
+        font-weight: 600;
+        font-size: 12px;
+        line-height: 18px;
+        letter-spacing: 0.1px;
+        color: $color_black;
+      }
+    }
+  }
+}
+
+.ant-dropdown-menu {
+  background: $color_white;
+  border-radius: 6px;
+  box-shadow: 0px 6px 24px -4px rgba(22, 34, 51, 0.12);
+
+  .ant-dropdown-menu-item,
+  .ant-dropdown-menu-submenu-title {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 150%;
+    color: $color_black;
+  }
+}
+
+.header-overlay {
+  .disconnect-button {
+    .ant-btn {
+      width: 100%;
+      font-weight: 500;
+      font-size: 14px;
+      line-height: 160%;
+      border-radius: 40px;
+      height: 44px;
+      max-width: 220px;
+      color: $color_primary;
+      border: 1px solid $color_primary;
+
+      &:hover,
+      &:focus,
+      &:active {
+        opacity: 0.8;
+      }
+
+      svg {
+        margin-right: 8px;
+      }
+    }
+  }
+}

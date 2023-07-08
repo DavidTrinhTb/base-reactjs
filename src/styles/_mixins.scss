@@ -1,0 +1,80 @@
+@import './mixins/notification-card';
+
+@mixin hover() {
+  &:hover {
+    opacity: 0.5;
+    cursor: pointer;
+  }
+}
+
+@mixin textEllipsis($line: 1) {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  -webkit-line-clamp: $line;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+}
+
+@mixin scrollbars() {
+  &::-webkit-scrollbar {
+    width: 6px !important;
+    background-color: #1e2838;
+    border-radius: 6px;
+  }
+
+  &::-webkit-scrollbar-track {
+    background-color: #1e2838;
+    border-radius: 6px;
+
+    &:horizontal {
+      border: 5px solid #1e2838;
+    }
+  }
+
+  &::-webkit-scrollbar-thumb {
+    background: $color_green;
+    border-radius: 6px;
+
+    &:horizontal {
+      border: 5px solid #1e2838;
+    }
+  }
+
+  &::-webkit-scrollbar-corner {
+    background-color: #1e2838;
+  }
+
+  &::-webkit-scrollbar-button {
+    background: #1e2838;
+    display: none;
+  }
+}
+
+@mixin linear-gradient-border($linear, $background, $border-width) {
+  position: relative;
+  background: $background;
+  background-clip: padding-box; /* !importanté */
+  border: solid $border-width transparent; /* !importanté */
+  z-index: 1;
+
+  &:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: -1;
+    margin: -$border-width; /* !importanté */
+    border-radius: inherit; /* !importanté */
+    background: $linear;
+  }
+}
+
+@mixin color-gradient($linear) {
+  background: $linear;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  text-fill-color: transparent;
+}

@@ -1,35 +1,45 @@
-import 'antd/dist/antd.css';
-import BigNumber from 'bignumber.js';
-import React from 'react';
-import { Provider } from 'react-redux';
-import { ToastContainer } from 'react-toastify';
-import 'react-toastify/dist/ReactToastify.css';
-import { PersistGate } from 'redux-persist/integration/react';
-import 'src/assets/scss/variable.scss';
-import 'src/assets/scss/_themes.scss';
-import './App.scss';
-import LayoutComponent from './components/01.layout';
-import { AuthProvider } from './contexts/auth';
-import initStore from './store';
-import './index.scss';
+import { useEffect, useState } from 'react';
+import { RouterProvider } from 'react-router-dom';
 
-BigNumber.config({
-  ROUNDING_MODE: BigNumber.ROUND_DOWN,
-  EXPONENTIAL_AT: [-50, 50],
-});
+import { ConfigProvider } from 'antd';
+import enUS from 'antd/lib/locale/en_US';
+import jaJP from 'antd/lib/locale/ja_JP';
+import i18n, { LANGUAGES } from 'i18n/i18n';
+import { router } from 'routes';
 
-const App: React.FC = () => {
-  const { store, persistor } = initStore();
+const App = () => {
+  const getLocale = (language: string) => {
+    const languageToChange = language || i18n.language;
+
+    switch (languageToChange) {
+      case LANGUAGES.EN: {
+        return enUS;
+      }
+      case LANGUAGES.JA: {
+        return jaJP;
+      }
+
+      default: {
+        return enUS;
+      }
+    }
+  };
+
+  const [locale, setLocale] = useState(getLocale as any);
+
+  useEffect(() => {
+    const changeConfigProvider = (language: string) => setLocale(getLocale(language));
+    i18n.on('languageChanged', changeConfigProvider);
+
+    return () => {
+      i18n.off('languageChanged', changeConfigProvider);
+    };
+  }, []);
 
   return (
-    <PersistGate persistor={persistor} loading={null}>
-      <AuthProvider>
-        <Provider store={store}>
-          <ToastContainer />
-          <LayoutComponent />
-        </Provider>
-      </AuthProvider>
-    </PersistGate>
+    <ConfigProvider locale={locale}>
+      <RouterProvider router={router} />
+    </ConfigProvider>
   );
 };
 

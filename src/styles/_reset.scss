@@ -1,0 +1,12 @@
+body {
+  margin: 0;
+}
+
+div.ant-typography,
+p,
+.ant-typography h1,
+div.ant-typography-h1,
+div.ant-typography-h1 > textarea,
+h1.ant-typography {
+  margin-bottom: 0px;
+}
