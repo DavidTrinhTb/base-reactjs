@@ -366,17 +366,17 @@
 
   &-indeterminate .ant-checkbox-inner {
     &::after {
-      background-color: $color_primary;
+      background-color: $color_primary_400;
     }
   }
 
   &-checked {
     .ant-checkbox-inner {
       background: $color_white;
-      border-color: $color_primary;
+      border-color: $color_primary_400;
 
       &::after {
-        border-color: $color_primary;
+        border-color: $color_primary_400;
       }
     }
 
@@ -387,14 +387,14 @@
 
   &-disabled {
     &.ant-checkbox-checked .ant-checkbox-inner:after {
-      border-color: $color_primary;
+      border-color: $color_primary_400;
     }
   }
 
   &-input:focus + .ant-checkbox-inner,
   &-wrapper:hover .ant-checkbox-inner,
   &:hover .ant-checkbox-inner {
-    border-color: $color_primary;
+    border-color: $color_primary_400;
   }
 }
 
@@ -442,6 +442,6 @@
 
 .ant-switch {
   &-checked {
-    background-color: $color_primary;
+    background-color: $color_primary_400;
   }
 }

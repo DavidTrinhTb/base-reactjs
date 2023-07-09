@@ -40,7 +40,7 @@ export const PAGE_SIZE_DEFAULT = 10;
 export const DEFAULT_SEARCH_DATE_FORMAT = 'DD/MM/YYYY';
 export const DATE_TIME_FORMAT = 'dd/MM/yyyy HH:mm:ss';
 export const DATE_FORMAT = 'dd/MM/yyyy';
-export const TIME_FORMAT = 'HH:mm:ss';
+export const TIME_FORMAT = 'HH:mm';
 
 export const emailRegex = new RegExp(
   /^(([^<>()[\]\\.,;:\s@"]+(\.[^<>()[\]\\.,;:\s@"]+)*)|.(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/,

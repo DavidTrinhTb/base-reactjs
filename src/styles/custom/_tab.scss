@@ -51,7 +51,7 @@
 }
 
 .ant-tabs-tab-active {
-  background: $color_primary;
+  background: $color_primary_400;
   position: relative;
 
   &::after {
@@ -62,7 +62,7 @@
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    background: $color_primary;
+    background: $color_primary_400;
     z-index: -1;
   }
 }

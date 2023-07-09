@@ -1,10 +1,26 @@
-import type { FC } from 'react';
-import { useTranslation } from 'react-i18next';
+import { Link } from 'react-router-dom';
 
-const Footer: FC = () => {
-  const { t } = useTranslation();
+import { Layout } from 'antd';
+import cx from 'classnames';
+import { FOOTER_NAVIGATION } from 'routes';
 
-  return <footer className='bg-white p-24 text-center font-500'>{t('footer.content')}</footer>;
+const { Footer: FooterAntd } = Layout;
+
+const Footer = () => {
+  return (
+    <FooterAntd className='footer-container'>
+      <div className='flex gap-[50px]'>
+        {FOOTER_NAVIGATION.map(({ text, link }) => (
+          <Link
+            to={link}
+            key={link}
+            className={cx('text-[16px] font-500 color-#FFF hover:color-primary focus:color-primary')}
+          >
+            {text}
+          </Link>
+        ))}
+      </div>
+    </FooterAntd>
+  );
 };
-
 export default Footer;

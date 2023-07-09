@@ -1,0 +1,85 @@
+.banner-item {
+  border: 20px solid $color_primary_300;
+  position: relative;
+  img {
+    width: 288px;
+    height: 288px;
+  }
+  @media (max-width: 1024px) {
+    img {
+      width: 250px;
+      height: 250px;
+    }
+  }
+  .content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    z-index: 1;
+    .title {
+      color: $color_primary_300;
+      font-weight: 500;
+    }
+    .desc {
+      background: $color_primary_400;
+      padding: 5px 10px;
+    }
+  }
+
+  &::after {
+    content: '';
+    width: 100%;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: rgb(0 0 0/ 40%);
+  }
+}
+
+.my-diary {
+  .desc {
+    text-overflow: ellipsis;
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-line-clamp: 5;
+    -webkit-box-orient: vertical;
+    word-break: break-all;
+  }
+}
+
+.my-exercise {
+  background: $color_dark_500;
+  .content {
+    max-height: 250px;
+    overflow-y: scroll;
+    overflow-x: hidden;
+
+    .exercise-item {
+      border-bottom: 1px solid $color_dark_400;
+      margin: 0 10px;
+      .color-primary-300 {
+        color: $color_primary_300;
+      }
+    }
+
+    &::-webkit-scrollbar {
+      width: 5px;
+    }
+
+    /* Track */
+    &::-webkit-scrollbar-track {
+      background: $color_dark_400;
+      border-radius: 5px;
+    }
+
+    /* Handle */
+    &::-webkit-scrollbar-thumb {
+      background: $color_primary_300;
+      border-radius: 5px;
+    }
+  }
+}

@@ -1,7 +1,9 @@
 import type { FC } from 'react';
 
+import HomePageContainer from 'modules/HomePage/components';
+
 const HomePage: FC = () => {
-  return <main className='login-wrapper'>Home page</main>;
+  return <HomePageContainer />;
 };
 
 export default HomePage;

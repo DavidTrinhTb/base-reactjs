@@ -33,8 +33,12 @@
     width: 32px;
     padding: 4px;
     border: none;
-    color: $color_primary;
+    // color: $color_primary;
     box-shadow: none;
     position: relative;
+  }
+
+  &.bg-primary {
+    background: linear-gradient($color_primary-400, $color_primary-300);
   }
 }
