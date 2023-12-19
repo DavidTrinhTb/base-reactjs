@@ -7,20 +7,22 @@ import jaJP from 'antd/lib/locale/ja_JP';
 import i18n, { LANGUAGES } from 'i18n/i18n';
 import { router } from 'routes';
 
+import { cloneLocale } from 'utils/locale';
+
 const App = () => {
   const getLocale = (language: string) => {
     const languageToChange = language || i18n.language;
 
     switch (languageToChange) {
       case LANGUAGES.EN: {
-        return enUS;
+        return cloneLocale(enUS);
       }
       case LANGUAGES.JA: {
-        return jaJP;
+        return cloneLocale(jaJP);
       }
 
       default: {
-        return enUS;
+        return cloneLocale(enUS);
       }
     }
   };
