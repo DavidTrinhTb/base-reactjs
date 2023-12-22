@@ -22,7 +22,7 @@ const App = () => {
       }
 
       default: {
-        return cloneLocale(enUS);
+        return cloneLocale(jaJP);
       }
     }
   };
