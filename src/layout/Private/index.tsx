@@ -4,8 +4,6 @@ import { Outlet } from 'react-router-dom';
 import { Layout } from 'antd';
 
 import LayoutContent from './Content';
-import Footer from './Footer';
-import Header from './Header';
 
 const PrivateLayout: FC = () => {
   useEffect(() => {}, []);
@@ -14,11 +12,9 @@ const PrivateLayout: FC = () => {
 
   return (
     <Layout>
-      <Header />
       <LayoutContent>
         <Outlet />
       </LayoutContent>
-      <Footer />
     </Layout>
   );
 };

@@ -2,10 +2,7 @@ import { createBrowserRouter } from 'react-router-dom';
 
 import PrivateLayout from 'layout/Private';
 import PublicLayout from 'layout/Public';
-import Challenge from 'pages/challenge';
 import HomePage from 'pages/home-page';
-import Login from 'pages/login';
-import MyRecord from 'pages/my-record';
 
 import IconChallenge from 'resources/svg/IconChallenge';
 import IconInfo from 'resources/svg/IconInfo';
@@ -24,7 +21,6 @@ const routes = [
     path: ROUTE_URL.HOME,
     element: <PublicLayout />,
     children: [
-      { path: ROUTE_URL.LOGIN, element: <Login /> },
       {
         path: ROUTE_URL.HOME,
         element: <PrivateLayout />,
@@ -32,26 +28,6 @@ const routes = [
           {
             path: ROUTE_URL.HOME,
             element: <HomePage />,
-          },
-        ],
-      },
-      {
-        path: ROUTE_URL.MY_RECORD,
-        element: <PrivateLayout />,
-        children: [
-          {
-            path: ROUTE_URL.MY_RECORD,
-            element: <MyRecord />,
-          },
-        ],
-      },
-      {
-        path: ROUTE_URL.CHALLENGE,
-        element: <PrivateLayout />,
-        children: [
-          {
-            path: ROUTE_URL.CHALLENGE,
-            element: <Challenge />,
           },
         ],
       },
